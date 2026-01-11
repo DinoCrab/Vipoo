@@ -52,7 +52,7 @@ async function enhanceAudioSegments(
 }
 
 // 使用 Web Audio API 进行基础音频处理（浏览器端）
-export function getEnhancementInstructions(options: EnhanceOptions): string {
+function getEnhancementInstructions(options: EnhanceOptions): string {
   const instructions: string[] = [];
   
   if (options.denoise) {
